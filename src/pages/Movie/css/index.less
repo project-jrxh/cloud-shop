@@ -1,0 +1,254 @@
+@font: 375/10rem;
+html,body,#root,#app{
+  width: 100%;
+  height: 100%;
+}
+
+#app{
+  // width: 300/@font;
+  // height: 100%;
+  // background-color: orange;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* 展示区域 */
+  #content{
+    position: absolute;
+    top: 0; // 注意
+    bottom: 49/@font;
+    width: 100%;
+    background-color:rgb(245, 245, 245);
+    overflow: auto; // 注意***超出滚动条，把握布局
+    .content-item{
+      width: 100%;
+      height: 100%;
+      display: none;
+      &.active{
+        display: block;
+      }
+      &:nth-child(1){
+        .top{
+          display: flex;
+          align-items: center;
+          width: 100%;
+          height: 44/@font;
+          background-color: #fff;
+          .left{
+            margin-left: 15/@font;
+            display: flex;
+            align-items: center;
+            .city{
+              width: 24/@font;
+              height: 17/@font;
+              font-size: 12/@font;
+              color: #666666;
+            }
+            img{
+              width: 7/@font;
+              height: 4/@font;
+              margin-left: 5/@font;
+            }
+          }
+          .center{
+            flex: 1;
+            font-size: 14/@font;
+            color: #333;
+            text-align: center;
+          }
+          .right{
+            width: 25/@font;
+            height: 25/@font;
+            margin-right: 18.9/@font;
+          }
+        }
+        .banner{
+          width: 375/@font;
+          height: 94/@font;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .tab{
+          display: flex;
+          width: 100%;
+          height: 44/@font;
+          background-color: #fff;
+          font-size: 16/@font;
+          color: #999999;
+          border: 1px solid #F0F0F0;
+          margin-bottom: 10/@font;
+          div{
+            position: relative;
+            flex: 1;
+            text-align: center;
+            line-height: 44/@font;
+            &.active{
+              color: #38404D;
+              &::after{   /******重要******/
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 0;
+                content: "";
+                display: block;
+                background-color: #262A32;
+                width: 20/@font;
+                height: 2/@font;
+              }
+            }
+          }
+        }
+        .movie{
+          background-color: #fff;
+          .movie-item{
+            .movie-top{
+              display: flex;
+              padding-top: 16/@font;
+              padding-left: 15/@font;
+              .movie-img{
+                width: 68/@font;
+                height: 90/@font;
+                margin-right: 10/@font;
+                img{
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .movie-info{
+                flex: 1;
+                padding-right: 15/@font;
+                padding-bottom: 11/@font;
+                // border-bottom: 1px solid #F5F5F5;
+                border-bottom: 1px solid red;
+                .movie-title-wrap{
+                  display: flex;
+                  .movie-title{
+                    width:160/@font;
+                    height: 21/@font;
+                    color: #333333;
+                    font-size: 15/@font;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                  }
+                  .movie-type{
+                    border: 1px solid #666666;
+                    border-radius: 18/@font;
+                    font-size: 12/@font;
+                    height: 14/@font;
+                    line-height: 14/@font;
+                    padding: 0 8/@font;
+                  }
+                }
+                .movie-detail{
+                  color:#999999;
+                  font-size: 12/@font;
+                  .info{
+                    height: 17/@font;
+                    em{
+                      font-style: normal;
+                    }
+                  }
+                  .label-wrap{
+                    margin-top: 2/@font;
+                    display: flex;
+                    .label{
+                      width: 26/@font;
+                      height: 15/@font;
+                      line-height: 15/@font;
+                      border-radius: 2/@font;
+                      margin-right: 5/@font;
+                      // vertical-align: middle;
+                      &:nth-child(1){
+                        color:#FF4E4E;
+                        border: 1px solid #FF4E4E;
+                      }
+                      &:nth-child(2){
+                        color:#FF8500;
+                        border: 1px solid #FF8500;
+                      }
+                      &:nth-child(3){
+                        color:#BC75F3;
+                        border: 1px solid #BC75F3;
+                      }
+                      &:nth-child(4){
+                        color:#6CC531;
+                        border: 1px solid #6CC531;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .movie-bottom{
+              .session{
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /* 底部导航 */
+  #footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;  // 不会
+    align-items: center;
+    width: 100%;
+    height: 49/@font;
+    // background-color: yellow;
+    font-size: 12/@font;
+    color: #999;
+    .footer-item{
+      .icon{
+        // 设置背景图片必须要宽和高
+        width: 25/@font;
+        height: 25/@font;
+        background-size: 100%;
+      }
+      .icon-text{
+        margin-top: 1.8/@font;
+        &.active{
+          color:#FF5200
+        }
+      }
+      &:nth-child(1){
+        .icon{
+          background-image: url("/assets/img/tab_home_normal.png");
+          &.active{
+            background-image: url("/assets/img/tab_home_selected.png");
+          }
+        }
+      }
+      &:nth-child(2){
+        .icon{
+          background-image: url("/assets/img/tab_store_normal.png");
+          &.active{
+            background-image: url("/assets/img/tab_store_selected.png");
+          }
+        }
+      }
+      &:nth-child(3){
+        .icon{
+          background-image: url("/assets/img/tab_activity_normal.png");
+          &.active{
+            background-image: url("/assets/img//tab_activity_selected.png");
+          }
+        }
+      }
+      &:nth-child(4){
+        .icon{
+          background-image: url("/assets/img/tab_mine_normal.png");
+          &.active{
+            background-image: url("/assets/img/tab_mine_selected.png");
+          }
+        }
+      }
+    }
+  }
+}
