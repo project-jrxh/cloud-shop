@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import App from './App.jsx'
+import "lib-flexible"
 
-ReactDom.render(<App />, document.querySelector('#root'))
+ReactDom.render(<Router><App /></Router>, document.querySelector('#root'))
