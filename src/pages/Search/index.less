@@ -1,0 +1,133 @@
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.searchContainer {
+  // height: 1000px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #333;
+  background: #fff;
+  .searchTop {
+    width: 100%;
+    // height: 90px;
+    margin-top: 10px;
+    .searchInput {
+      position: relative;
+      width: 100%;
+      height: 30px;
+      input {
+        width: 100%;
+        height: 100%;
+        border: 0; // 去除未选中状态边框
+        outline: none; // 去除选中状态边框
+        border-radius: 15px;
+        background: #f2f2f2;
+        padding: 0 30px;
+        font-size: 14px;
+        box-sizing: border-box;
+      }
+      input::-webkit-input-placeholder {
+        color: #ccc;
+      }
+      .searchIcon {
+        position: absolute;
+        top: 3px;
+        left: 5px;
+        width: 15px;
+        height: 15px;
+        .icon-search {
+          font-size: 20px;
+          color: #ccc;
+        }
+      }
+      .cancelInput {
+        position: absolute;
+        top: 2px;
+        right: 10px;
+        width: 15px;
+        height: 15px;
+        .icon-chacha1 {
+          font-size: 16px;
+          color: #ccc;
+          // display: none;
+          &.showDel {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  .list {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 20px;
+    border-bottom: 1px solid #f2f2f2;
+    a {
+      font-size: 15px;
+      color: #507daf;
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+  .otherList {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 20px;
+    .hotSearch {
+      h2 {
+        font-size: 12px;
+        color: #666;
+      }
+      .hotList {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-top: 10px;
+        .hotItem {
+          height: 30px;
+          width: auto;
+          border: 1px solid #eaeaea;
+          border-radius: 15px;
+          margin: 0 10px 10px 0;
+          padding: 0 10px;
+          a {
+            font-size: 15px;
+            color: #333;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .searchRecords {
+      .recordItem {
+        height: 45px;
+        line-height: 45px;
+        font-size: 15px;
+        border-bottom: 1px solid #f2f2f2;
+        a {
+          display: inline-block;
+          width: 300px;
+          color: #333;
+        }
+        .icon-shijian {
+          font-size: 18px;
+          color: #ccc;
+          margin-right: 10px;
+        }
+        .icon-chacha {
+          font-size: 25px;
+          color: #999;
+          vertical-align: bottom;
+        }
+      }
+    }
+  }
+}

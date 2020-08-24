@@ -6,8 +6,11 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.20.0",
     "babel-plugin-import": "^1.13.0",
+    "http-proxy-middleware": "^1.0.5",
     "postcss-pxtorem": "^5.1.1",
+    "pubsub-js": "^1.9.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3"
@@ -38,5 +41,6 @@
     "less": "^3.12.2",
     "less-loader": "^6.2.0",
     "react-app-rewired": "^2.1.6"
-  }
+  },
+  "proxy": "https://music.163.com"
 }

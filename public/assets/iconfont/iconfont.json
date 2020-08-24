@@ -1,0 +1,72 @@
+{
+  "id": "2019534",
+  "name": "react",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11181678",
+      "name": "商品",
+      "font_class": "shangpin",
+      "unicode": "ebb9",
+      "unicode_decimal": 60345
+    },
+    {
+      "icon_id": "1621030",
+      "name": "向上箭头",
+      "font_class": "jiantou",
+      "unicode": "e940",
+      "unicode_decimal": 59712
+    },
+    {
+      "icon_id": "3084441",
+      "name": "叉叉",
+      "font_class": "chacha",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "8779396",
+      "name": "icon_返回顶部箭头",
+      "font_class": "icon_fanhuidingbujiantou",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "9558048",
+      "name": "叉叉",
+      "font_class": "chacha1",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "9859232",
+      "name": "向上箭头",
+      "font_class": "xiangshangjiantou",
+      "unicode": "e76c",
+      "unicode_decimal": 59244
+    },
+    {
+      "icon_id": "9906688",
+      "name": "向下箭头",
+      "font_class": "Down_arrow",
+      "unicode": "e77d",
+      "unicode_decimal": 59261
+    },
+    {
+      "icon_id": "10678434",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e6e1",
+      "unicode_decimal": 59105
+    },
+    {
+      "icon_id": "10842743",
+      "name": "时间 历史记录 计时 钟表 线性",
+      "font_class": "shijian",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

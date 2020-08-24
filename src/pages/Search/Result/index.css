@@ -1,0 +1,115 @@
+.active {
+  color: #d33a31 !important;
+}
+.searchResultWrapper {
+  margin-top: 20px;
+}
+.searchResultWrapper .searchResult {
+  background: #fff;
+}
+.searchResultWrapper .searchResult .sortOrder {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  height: 39px;
+  line-height: 39px;
+  font-size: 15px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.searchResultWrapper .searchResult .sortOrder span {
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+}
+.searchResultWrapper .searchResult .sortOrder span i {
+  position: absolute;
+  left: 300px;
+  display: block;
+  color: #ccc;
+  margin-top: -2px;
+}
+.searchResultWrapper .searchResult .sortOrder span i.icon-jiantou {
+  top: -1px;
+}
+.searchResultWrapper .searchResult .sortOrder span i.icon-Down_arrow {
+  top: 7px;
+}
+.searchResultWrapper .resultList {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  justify-content: center;
+}
+.searchResultWrapper .resultList .resultItem {
+  width: 177px;
+}
+.searchResultWrapper .resultList .resultItem img {
+  width: 172px;
+}
+.searchResultWrapper .resultList .resultItem .desc h3 {
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.searchResultWrapper .resultList .resultItem .desc p {
+  font-size: 14px;
+  color: #d33a31;
+  text-align: center;
+  margin-top: 2px;
+}
+.otherResult .nothing {
+  height: 89px;
+  margin-top: 20px;
+  text-align: center;
+  background: #fff;
+}
+.otherResult .nothing .icon-shangpin {
+  font-size: 50px;
+  color: #ccc;
+}
+.otherResult .nothing p {
+  font-size: 13px;
+  color: #888;
+}
+.otherResult .recommend {
+  height: 45px;
+  margin-top: 10px;
+  background: #fff;
+  line-height: 45px;
+  text-align: center;
+  font-size: 17px;
+  color: #333;
+}
+.otherResult .recommendList {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  justify-content: center;
+}
+.otherResult .recommendList .recItem {
+  width: 177px;
+}
+.otherResult .recommendList .recItem img {
+  width: 172px;
+}
+.otherResult .recommendList .recItem .desc h3 {
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.otherResult .recommendList .recItem .desc p {
+  font-size: 14px;
+  color: #d33a31;
+  text-align: center;
+  margin-top: 2px;
+}

@@ -1,8 +1,13 @@
-import React from 'react'
-import './App.less'
+import React from "react";
+import "./App.less";
+import Search from "./pages/Search/index";
 
 function App() {
-  return <div id="app">123</div>
+  return (
+    <div id="app">
+      <Search />
+    </div>
+  );
 }
 
-export default App
+export default App;
